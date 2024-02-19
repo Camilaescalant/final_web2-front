@@ -28,7 +28,7 @@ const NavbarComponent = () => {
   };
   return (
     <div className={styles.navbar}>
-      <h3>SuperHero APP</h3>
+      <h3>SuperHeroe APP</h3>
       <ButtonComponent
         type={"botonMenu"}
         actionClick={goProfile}
