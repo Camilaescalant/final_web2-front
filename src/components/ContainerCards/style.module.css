@@ -1,0 +1,10 @@
+.container {
+  background-color: #ffffff;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+  direction: ltr;
+  overflow: auto;
+}

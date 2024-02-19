@@ -1,0 +1,39 @@
+.container{
+
+}
+
+.navbar {
+  background-color: #bfacaa;
+  width: 20%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 20px;
+  align-items: center;
+  position: fixed;  
+}
+
+.navbar > h3 {
+  margin-top: 20px;
+}
+
+.logut {
+  margin-bottom: 20px;
+}
+
+.button{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.input{
+  border-radius: 2em;
+  border: none;
+  background-color: #0e1025;
+  width: 25em;
+  text-align: center; 
+  height: 2.5em;
+}

@@ -1,0 +1,19 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.containerInput{
+    display: flex;
+    flex-direction: column;
+    background-color: #BFACAA;
+    justify-content: center;
+    align-items: center;
+    width: 50em;
+    height: 30em;
+    border-radius: 10px;
+    
+}

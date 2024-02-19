@@ -1,0 +1,12 @@
+.container{
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;   
+}
+
+.containerCard{
+    display: flex;
+    padding: 1em;
+    align-items: center;
+    margin-left: 250px;
+}
