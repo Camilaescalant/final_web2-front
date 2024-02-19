@@ -24,7 +24,7 @@ const CardComponent = ({ type, item, notAdd, eliminarMySuperheroe, agregarSuperh
           <div className={style.containerModal}>
             <div>
               <div className={style.imgModal}>
-                <img src={item.id.imagesm} loading="lazy" />
+                <img src={item.imagesm} loading="lazy" />
                 <p>Nombre: {item.name}</p>
               </div>
               <div className={style.containerStast}>

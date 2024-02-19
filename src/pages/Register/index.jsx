@@ -22,7 +22,7 @@ const RegisterPage = () => {
         validationSchema={Yup.object({
           name: Yup.string().required("Ingrese su nombre"),
           email: Yup.string()
-            .email("Ingrese un mail válido")
+            .email("Ingrese un mail valido")
             .required("Ingrese un email"),
           nickname: Yup.string().required("Ingrese un nickname"),
           password: Yup.string().required("Ingrese una contraseña"),

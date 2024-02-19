@@ -75,7 +75,7 @@ const AbmPages = () => {
                       className={style.button}
                       onClick={() => deleteUser(item.id, index)}
                     >
-                      Eliminar usuario
+                      Eliminar Usuario
                     </button>
                     {item.rol == 2 ? (
                       <button

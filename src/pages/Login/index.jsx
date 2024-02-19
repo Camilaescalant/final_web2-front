@@ -20,7 +20,7 @@ const LoginPage = () => {
         }}
         validationSchema={Yup.object({
           email: Yup.string()
-            .email("Ingrese un mail válido")
+            .email("Ingrese un mail valido")
             .required("Ingrese un email"),
           password: Yup.string().required("Ingrese una contraseña"),
         })}
@@ -28,7 +28,7 @@ const LoginPage = () => {
           await axios
             .post("https://finalweb2-api-production.up.railway.app/auth/login", values)
             .then(({ data }) => {
-              console.log(data);
+
               localStorage.setItem("userId", data.id);
               localStorage.setItem("email", data.email);
               
@@ -58,7 +58,7 @@ const LoginPage = () => {
                   type={"button"}
                   actionClick={formik.onSubmit}
                 />
-                <a href="http://localhost:5173/register">O Registrarse</a>
+                <p onClick={() => navigate("/register")}>O Registrarse</p>
               </div>
             </div>
           </Form>
