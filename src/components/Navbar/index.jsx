@@ -51,7 +51,7 @@ const NavbarComponent = () => {
         <ButtonComponent
           type={"botonMenu"}
           actionClick={logout}
-          text="Salir de mi cuenta"
+          text="Salir"
         />
       </div>
     </div>
