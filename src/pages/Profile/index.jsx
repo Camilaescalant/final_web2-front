@@ -10,7 +10,7 @@ const ProfilePages = () => {
   const [user, setUser] = useState();
   const navigate = useNavigate();
   const pedirDatosUsuario = () => {
-    axios.get(`http://localhost:5000/user/info/${data}`)
+    axios.get(`https://finalweb2-api-production.up.railway.app/user/info/${data}`)
     .then(({data}) => {
       setUser(data)
     })

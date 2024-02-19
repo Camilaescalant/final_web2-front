@@ -17,11 +17,11 @@ const AbmPages = () => {
     await superheroeData();
   };
   const superheroeData = async () => {
-    const { data } = await axios.get(`http://localhost:5000/superheroe`);
+    const { data } = await axios.get(`https://finalweb2-api-production.up.railway.app/superheroe`);
     setSuperheroe(data);
   };
   const userData = async () => {
-    const { data } = await axios.get("http://localhost:5000/abm/user");
+    const { data } = await axios.get("https://finalweb2-api-production.up.railway.app/abm/user");
     setUsers(data);
   };
 
@@ -29,11 +29,11 @@ const AbmPages = () => {
     const aux = users.filter((i) => i.id !== userId);
 
     setUsers(aux);
-    await axios.delete(`http://localhost:5000/abm/user/${userId}`);
+    await axios.delete(`https://finalweb2-api-production.up.railway.app/abm/user/${userId}`);
   };
 
   const promoteRol = async (userId, rol) => {
-    const { data } = await axios.put("http://localhost:5000/abm/user/rol", {
+    const { data } = await axios.put("https://finalweb2-api-production.up.railway.app/abm/user/rol", {
       userId: userId,
       rol: rol,
     });
@@ -44,7 +44,7 @@ const AbmPages = () => {
     const aux = superheroe.filter((i) => i.id !== superheroeId);
 
     setSuperheroe(aux);
-    await axios.delete(`http://localhost:5000/abm/superheroe/${superheroeId}`);
+    await axios.delete(`https://finalweb2-api-production.up.railway.app/abm/superheroe/${superheroeId}`);
   };
 
   return (
@@ -58,7 +58,7 @@ const AbmPages = () => {
             className={style.button}
             onClick={() => navigate("/profile")}
           >
-            Volver al INICIO
+            Volver al inicio
           </button>
           <div className={style.containerUser}>
             {users &&
@@ -75,7 +75,7 @@ const AbmPages = () => {
                       className={style.button}
                       onClick={() => deleteUser(item.id, index)}
                     >
-                      Eliminar Usuario
+                      Eliminar usuario
                     </button>
                     {item.rol == 2 ? (
                       <button

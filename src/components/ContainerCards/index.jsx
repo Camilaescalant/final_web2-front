@@ -13,14 +13,14 @@ const ContainerCardsComponent = () => {
 
   /* Acciones de pedir datos */
   const pedirSuperheroes = async () => {
-    const { data } = await axios.get(`http://localhost:5000/superheroe`);
+    const { data } = await axios.get(`https://finalweb2-api-production.up.railway.app/superheroe`);
     setSuperheroe(data);
   };
 
   const pedirMisSuperheroes = async () => {
     if (idUser) {
       const { data } = await axios.get(
-        `http://localhost:5000/superheroe/mysuperhero/${idUser}`
+        `https://finalweb2-api-production.up.railway.app/superheroe/mysuperhero/${idUser}`
       );
       console.log(data)
       setMyHeroe(data.Superheroes);
@@ -29,7 +29,7 @@ const ContainerCardsComponent = () => {
 
   const eliminarMySuperheroe = async (idHeroe) => {
     const { data } = await axios.post(
-      `http://localhost:5000/superheroe/delete/`,
+      `https://finalweb2-api-production.up.railway.app/superheroe/delete/`,
       {
         userId: idUser,
         superheroeId: idHeroe,
@@ -40,7 +40,7 @@ const ContainerCardsComponent = () => {
   };
 
   const agregarSuperheroe = async (idHeroe) => {
-    const { data } = await axios.post(`http://localhost:5000/superheroe/add`, {
+    const { data } = await axios.post(`https://finalweb2-api-production.up.railway.app/superheroe/add`, {
       userId: idUser,
       superheroeId: idHeroe,
     });
