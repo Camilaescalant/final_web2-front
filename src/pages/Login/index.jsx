@@ -26,7 +26,7 @@ const LoginPage = () => {
         })}
         onSubmit={async (values) => {
           await axios
-            .post("https://finalweb2-api-production.up.railway.app/auth/login", values)
+            .post("https://apinodejs-production-a122.up.railway.app/auth/login", values)
             .then(({ data }) => {
 
               localStorage.setItem("userId", data.id);

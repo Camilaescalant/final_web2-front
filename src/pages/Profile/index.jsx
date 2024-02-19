@@ -12,7 +12,7 @@ const ProfilePages = () => {
   const navigate = useNavigate();
   const pedirDatosUsuario = async () => {
     await axios
-      .get(`https://finalweb2-api-production.up.railway.app/user/info/${data}`)
+      .get(`https://apinodejs-production-a122.up.railway.app/user/info/${data}`)
       .then(({ data }) => {
         setUser(data);
       })
@@ -22,7 +22,7 @@ const ProfilePages = () => {
   };
   const actualizarUsuario = async () => {
     await axios
-      .put(`https://finalweb2-api-production.up.railway.app/user/info/${data}`)
+      .put(`https://apinodejs-production-a122.up.railway.app/user/info/${data}`)
       .then(({ data }) => {
         setUser(data);
       })

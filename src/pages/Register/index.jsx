@@ -29,7 +29,7 @@ const RegisterPage = () => {
         })}
         onSubmit={async (values) => {
           await axios
-            .post("https://finalweb2-api-production.up.railway.app/auth/register", values)
+            .post("https://apinodejs-production-a122.up.railway.app/auth/register", values)
             .then(({ data }) => {
               localStorage.setItem("userId", data.id);
               localStorage.setItem("email", data.email);
